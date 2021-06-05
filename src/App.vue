@@ -1,28 +1,27 @@
 <template>
+
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="MD HASANUZZAMAN DIPU 2021git "/>
+    <cHeader></cHeader>
+      <cFooter></cFooter>
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import cHeader from './components/Header_Footer/Header';
+import cFooter from './components/Header_Footer/Footer';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+
+    }
+  },
+  comments:{
+    cHeader,
+    cFooter
   }
+
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
