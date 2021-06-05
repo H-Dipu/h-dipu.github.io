@@ -1,5 +1,5 @@
 <template>
   <div id="app">
-    <p> Footer</p>
+    <p> Footer </p>
   </div>
 </template>
