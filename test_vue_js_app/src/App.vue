@@ -9,6 +9,7 @@
              @updateFirstname="fName=$event"
     />
     <cListHelper>
+
       <ul slot="list">
         <li v-for="lsHelper in listHelper" :key="lsHelper">{{lsHelper}} </li>
       </ul>
@@ -36,6 +37,7 @@
 
     </cListHelper>
     <cFooter/>
+    <cForm></cForm>
 
   </div>
 </template>
@@ -44,6 +46,7 @@
 import cHeader from './components/Header_Footer/Header';
 import cFooter from './components/Header_Footer/Footer';
 import cListHelper  from './components/ListHelper';
+import cForm from './components/Form';
 export default {
   data(){
     return{
@@ -70,7 +73,8 @@ export default {
   components:{
     cHeader,
     cFooter,
-    cListHelper
+    cListHelper,
+    cForm
   },
   created() {
     setTimeout(()=>{
